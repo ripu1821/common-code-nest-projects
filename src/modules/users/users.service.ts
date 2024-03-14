@@ -139,6 +139,10 @@ export class UsersService {
     if (!user) {
       throw new BadRequestException(MESSAGES.LOGIN_USER_DELETED);
     }
+
+    if (user?.is_delete) {
+      throw new BadRequestException(MESSAGES.LOGIN_USER_DELETED);
+    }
     return user;
   }
 

@@ -21,6 +21,9 @@ export class User extends Document {
 
   @Prop()
   name: string;
+
+  @Prop({ default: false })
+  is_delete: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

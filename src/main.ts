@@ -14,8 +14,8 @@ async function bootstrap() {
   app.setGlobalPrefix('api/v1');
 
   const config = new DocumentBuilder()
-    .setTitle('Password-manager-app')
-    .setDescription('The Password Manager API document')
+    .setTitle('Common For all Projects')
+    .setDescription('API document')
     .setVersion('1.0')
     .addBearerAuth(
       {
