@@ -15,7 +15,7 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Common For all Projects')
-    .setDescription('API document')
+    .setDescription('API documents')
     .setVersion('1.0')
     .addBearerAuth(
       {
